@@ -1,5 +1,5 @@
 # Bài 11 trang 65
-
+import math
 def f1(x):
     return (2-math.e**x+x*x)/3
 
