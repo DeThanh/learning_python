@@ -1,4 +1,5 @@
 # Bài 5 trang 54
+import math
 def function_f(x):
     return 2*x*math.cos(2*x)-(x+1)**2
 def f(x):
