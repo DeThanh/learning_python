@@ -1,6 +1,5 @@
 # Bài 5 trang 54
 import math
-import sympy
 import numpy as np
 
 def f1(x):
