@@ -29,6 +29,6 @@ def Newton(p0,TOL,N0,f,df):
 print(end="Kết quả câu b:\n")
 Newton(-3,1e-4,50,f1,df1)
 # Câu d
-print(end="\nKết quả câu b:\n")
+print(end="\nKết quả câu d:\n")
 Newton(0,1e-4,50,f2,df2)
 
