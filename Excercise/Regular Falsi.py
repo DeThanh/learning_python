@@ -24,9 +24,9 @@ def Newton(p0,p1,TOL,N0,f):
             p1=p
 
 # Câu b
+print(end="Kết quả câu b:\n")
 Newton(-3,-2.5,1e-4,50,f1)
-print(end="\n")
 # Câu d
+print(end="\nKết quả câu d:\n")
 Newton(0,math.pi/4,1e-4,50,f2)
-
 
