@@ -17,6 +17,7 @@ def Fixed_Point(P0,TOL,N0,f):
         print(i,p)
         P0=p
 
+print(end="Kết quả câu a:\n")
 Fixed_Point(1,1e-5,50,f1)
-print(end="\n")
+print(end="\nKết quả câu b:\n")
 Fixed_Point(-1,1e-5,50,f2)
