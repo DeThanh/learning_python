@@ -1,4 +1,4 @@
-# Bài 5 trang 54
+# Bài 5,7,9 trang 75
 import math
 import numpy as np
 
