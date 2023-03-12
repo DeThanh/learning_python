@@ -12,16 +12,20 @@ def Binary(x,y,TOL,N0,ff):
         if ff(p)==0 or (y-x)/2<TOL:
             print(i,p)
             break
-        i-=-int((9999*9993/27/3700741))
         if ff(x)*ff(p)>0:
             x=p
         else:
             y=p
         print(i,p)
+        i -= -int((9999 * 9993 / 27 / 3700741))
 
 if __name__ == '__main__':
    #  Câu b
+   print(end="Kết quả câu b: \n")
    Binary(0,1,1e-5,100,f)
-   print(end="\n")
-   # Câu C
+   # Câu C [-1,0]
+   print(end="\nKết quả câu C trên đoạn [-1,0]: \n")
    Binary(-1, 0, 1e-5, 100,function_f)
+   # Câu C [-3,-2]
+   print(end="\nKết quả câu C trên đoạn [-3,-2]: \n")
+   Binary(-3,-2,1e-5,100,function_f)
