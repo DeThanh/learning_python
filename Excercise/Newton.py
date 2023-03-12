@@ -1,4 +1,4 @@
-# Bài 5 trang 54
+# Bài 5 trang 5 7 9
 import math
 import numpy as np
 
@@ -26,9 +26,9 @@ def Newton(p0,TOL,N0,f,df):
         p0=p
 
 # Câu b
+print(end="Kết quả câu b:\n")
 Newton(-3,1e-4,50,f1,df1)
-print(end="\n")
 # Câu d
+print(end="\nKết quả câu b:\n")
 Newton(0,1e-4,50,f2,df2)
-
 
