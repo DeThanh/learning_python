@@ -5,6 +5,7 @@
 #define db double  
 #define rep(i,a,b) for(ll i=a;i<b;++i)
 #define de_rep(i,a,b) for(ll i=a-1;i>=b;--i)
+#define FAST ios_base::sync_with_stdio(false); cin.tie(NULL);
 #define Gausses Gauss();
 using namespace std;
 const int N=205,NN=205*205;
@@ -16,7 +17,12 @@ void swap(db &a,db &b){
 }
 void Gauss(){
 	ll n; cin>>n;
-	rep(i,0,n)rep(j,0,n+1) cin>>f[i][j];
+	srand(time(0));
+	rep(i,0,n)rep(j,0,n+1) f[i][j]=rand()%100;
+	rep(i,0,n){
+		rep(j,0,n+1) printf("%1.0f ",f[i][j]);
+		printf("\n");
+	}
 	rep(i,0,n-1){
 		int p=i,cnt=0;
 		rep(j,i,n) {
@@ -56,12 +62,12 @@ void Gauss(){
 		rep(j,i+1,n+1) temp+=f[i][j]*res[j];
 		res[i]=1.0*(f[i][n]-temp)/f[i][i];
 	}
-	cout<<"\n";
-	rep(i,0,n) printf("X%d %f\n",i+1,res[i]);
+	//cout<<"\n\n";
+	rep(i,0,n) printf("\nX%d %0.3f",i+1,res[i]);
 }
 main(){
+	FAST;
 	Gausses;
 }
-
 
 
