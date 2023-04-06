@@ -28,7 +28,7 @@ void Gauss(){
 		} 
 	//	cout<<"\n"<<p<<" "<<i<<"\n";
 		if(cnt==n-i) {
-			printf("‘No unique solution exists’");
+			printf("â€˜No unique solution existsâ€™");
 			return;
 		}
 		if(p!=i) rep(j,0,n+1) swap(f[i][j],f[p][j]);
@@ -47,7 +47,7 @@ void Gauss(){
 //		}
 	}	
 	if(f[n-1][n-1]==0) {
-		printf("‘No unique solution exists’");
+		printf("â€˜No unique solution existsâ€™");
 		return;
 	}
 	res[n-1]=1.0*f[n-1][n]/f[n-1][n-1];
